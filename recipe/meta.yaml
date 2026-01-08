@@ -12,7 +12,7 @@ source:
 build:
   entry_points:
     - json-playground = partial_json_parser.playground:main
-  skip: true # [ py<310 ]
+  skip: true # [py<310]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
@@ -30,7 +30,6 @@ test:
   commands:
     - pip check
   requires:
-    - python
     - pip
 
 about:
